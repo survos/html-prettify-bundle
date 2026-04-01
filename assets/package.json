@@ -1,0 +1,31 @@
+{
+  "name": "@survos/html-prettify",
+  "description": "Make HTML pretty",
+  "license": "MIT",
+  "version": "1.0.1",
+  "symfony": {
+    "controllers": {
+      "prettify": {
+        "main": "src/controllers/prettify_controller.js",
+        "webpackMode": "eager",
+        "fetch": "eager",
+        "enabled": true
+      }
+    },
+    "importmap": {
+      "html-prettify": "^1.0.7"
+    },
+    "autoimport": {
+      "html-prettify": true
+    }
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": "^3.2.2"
+  },
+  "devDependencies": {
+    "@hotwired/stimulus": "^3.2.2"
+  },
+  "dependencies": {
+    "html-prettify": "^1.0.7"
+  }
+}
