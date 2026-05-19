@@ -3,7 +3,7 @@
 namespace Survos\HtmlPrettifyBundle;
 
 use Gajus\Dindent\Indenter;
-use Survos\CoreBundle\Bundle\AssetMapperBundle;
+use Survos\Kit\AbstractUxBundle;
 use Survos\HtmlPrettifyBundle\Twig\HtmlPrettifyExtension;
 use Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symfony\Component\DependencyInjection\Reference;
 use Twig\Environment;
 
-class SurvosHtmlPrettifyBundle extends AssetMapperBundle
+class SurvosHtmlPrettifyBundle extends AbstractUxBundle
 {
     public const ASSET_PACKAGE = 'html-prettify';
 //        protected string $extensionAlias = 'prettify_html';
