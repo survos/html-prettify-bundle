@@ -21,7 +21,7 @@
         "symfony/http-kernel": "^8.1",
         "twig/twig": "^3.4",
         "symfony/options-resolver": "^8.1",
-        "survos/kit-bundle": "^2.0"
+        "survos/kit-bundle": "^2.5"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
