@@ -15,7 +15,6 @@ use Twig\Environment;
 // Symfony\Component\HttpKernel\Bundle\Bundle <-- Flex auto-registration marker (see Survos\Kit\AbstractSurvosBundle)
 class SurvosHtmlPrettifyBundle extends AbstractUxBundle
 {
-    public const ASSET_PACKAGE = 'html-prettify';
 //        protected string $extensionAlias = 'prettify_html';
 
     /**
