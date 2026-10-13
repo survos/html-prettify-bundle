@@ -1,21 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Survos\HtmlPrettifyBundle;
 
 use Gajus\Dindent\Indenter;
-use Survos\Kit\AbstractUxBundle;
 use Survos\HtmlPrettifyBundle\Twig\HtmlPrettifyExtension;
+use Survos\Kit\AbstractUxBundle;
 use Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use Symfony\Component\DependencyInjection\Reference;
-use Twig\Environment;
 
 // Symfony\Component\HttpKernel\Bundle\Bundle <-- Flex auto-registration marker (see Survos\Kit\AbstractSurvosBundle)
 class SurvosHtmlPrettifyBundle extends AbstractUxBundle
 {
-//        protected string $extensionAlias = 'prettify_html';
+    //        protected string $extensionAlias = 'prettify_html';
 
     /**
      * @param array<mixed> $config
@@ -39,6 +39,5 @@ class SurvosHtmlPrettifyBundle extends AbstractUxBundle
             ->children()
             ->scalarNode('indentation_character')->defaultValue('    ')->end()
             ->end();
-        ;
     }
 }

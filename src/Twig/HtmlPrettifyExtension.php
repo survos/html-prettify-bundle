@@ -1,13 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Survos\HtmlPrettifyBundle\Twig;
 
 use Gajus\Dindent\Indenter;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\WebpackEncoreBundle\Twig\StimulusTwigExtension;
 use Twig\Environment;
 use Twig\Extension\AbstractExtension;
-use Twig\Markup;
 use Twig\TwigFilter;
 use Twig\TwigFunction;
 
@@ -46,6 +46,7 @@ class HtmlPrettifyExtension extends AbstractExtension
         $msg = $options['msg'];
         $in = new Indenter();
         $pretty = sprintf("\n<!-- %s -->\n%s\n<!-- end of %s -->\n", $msg, $in->indent($markup), $msg);
+
         return $pretty;
     }
 }
